@@ -1,0 +1,39 @@
+<!-- Interactions - Alert, Prompt, Confirm -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Interactions</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Page</h1>
+    </div>
+<script>
+// First these interactions will happen then our page will get loaded
+// 1.alert - it is a function which takes string as an argument
+// it also does not return anything
+alert("This is an Alert Message");
+
+// 2.Prompt it is used to take a value from a user
+// prompt takes first parameter as the message to display and second parameter as the default name
+// if we do not give the second argument then the box will show blank
+let name = prompt("What is your name","Guest");
+console.log(name);
+
+// 3.Confirm is used to ask for validations from the user
+// this will display a message and if we press yes the console will show true and if we press cancel the console will show false
+let deletepost = confirm("Are you sure you want to go to the post?");
+if(deletepost){
+    // Code to delete the post
+    console.log("Your post has been deleted successfully");
+}
+else{
+    // Code to cancel deletion of the post
+    console.log("Your post has not been deleted");
+}
+</script>
+</body>
+</html>

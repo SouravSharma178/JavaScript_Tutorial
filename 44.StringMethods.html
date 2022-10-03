@@ -1,0 +1,75 @@
+<!--The various String methods are
+1.indexOf
+2.lastindexOf
+3.slice
+4.substring
+5.substr
+6.replace
+7.toLowercase
+8.toUppercase
+9.concat
+10.trim
+11.charAt
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript || String Methods</title>
+</head>
+<body>
+   <script>
+       var string = "This is a String";
+       console.log(string);
+       // this will give the first occurence of the substring
+       var firstposition = string.indexOf("is");
+       console.log(firstposition);
+
+       // this will give the last occurence of the substring
+       var lastposition = string.lastIndexOf("is");
+       console.log(lastposition);
+
+       // 1. slice function
+       var varforslice = string.slice(0,6);
+       console.log(varforslice);
+
+       // 2. Substring Method
+       // the difference between substring and slice methods is that the substring method cannot take negative parameters
+       var varforsubstring = string.substring(0,6);
+       console.log(varforsubstring);
+
+       // 3. subtr method
+       var varforsubstr = string.substr(0,6);
+       console.log(varforsubstr);
+
+       // 4.Replace
+       // this method will replace a string by another
+       // the initital string will not get changed when we use the replace method
+       var varforreplace = string.replace("String","Integer");
+       console.log(string);
+       console.log(varforreplace);
+
+       // 5.Uppercase and Lowercase
+       console.log(string.toUpperCase());
+       console.log(string.toLowerCase());
+
+       //6.concat
+       // this method is used to join two strings
+       var varforconcat = string.concat(" Concatted");
+       console.log(varforconcat);
+
+       //6.trim
+       // this method is used to remove whitespaces between two strings but only from the starting and the end so this result will not show any effect as our string is already trimmed
+       console.log(string.trim());
+
+       //7.charAt
+       // this gives the character at the position we specified
+       var varforcharat = string.charAt(2);
+       console.log(varforcharat);
+       // alternatively we can also use the another function
+       console.log(string[3]);
+   </script>
+</body>
+</html>

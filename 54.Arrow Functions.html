@@ -1,0 +1,75 @@
+<!-- arrow functions provide us a shortcut to write our functions -->
+<!--------------------------------------------------------
+// functions refresher
+// 1.function fun(){
+//     console.log("hello world");
+// }
+// fun();
+
+// 2. let arr = [1,2,3,4,5];
+// let i = 0;
+// arr.forEach(function(i){
+//   console.log(i);
+// });
+
+// 3.fun = () => console.log("hello world");
+// fun();
+
+// 4.fun = (a,b) => a+b;
+// this requires a variable to store the value as it returns a value
+// let result = fun(3,5);
+// console.log(result);
+
+// 5.function fun(a,b){
+//     console.log(a*b);
+// }
+// fun(3,5);
+
+// 6.const fun = (a,b)=>{
+//   console.log("This is my function",a+b);
+// };
+// fun(5,3);
+------------------------------------------------------
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Functions</title>
+  </head>
+  <body>
+    <script>
+      /*
+      function greet(a,b){
+          console.log(a+b);
+      }
+      */
+      // the same function could be written using the arrow operator
+      /*
+      let greet = (a,b)=>{
+          console.log(a+b);
+      };
+      */
+      // another short way of writing this is
+      // to see the result of this function we will need to type sum(a,b) in the console
+      let sum = (a, b) => a + b;
+      let half = (a) => a / 2;
+      //setInterval(greet,1000,5,3);
+      setInterval(sum, 1000, 5, 3);
+      let obj1 = {
+        greeting: "Good Morning",
+        names: ["Harry", "Rohan", "SkillF", "DjKhiladi"],
+        speak() {
+          // the arrow operator uses a lexical this which means that it is able to access the variables within an object using a this operator
+          // but if we would have typed this.names.forEach( function(student) only we would only be able to access variables local/inside this function
+        this.names.forEach((student) => {
+            console.log(this.greeting + " Kukdoo Koo " + student);
+          });
+        },
+      };
+      obj1.speak();
+    </script>
+  </body>
+</html>

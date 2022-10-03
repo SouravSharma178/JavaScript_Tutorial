@@ -1,0 +1,41 @@
+<!--The two methods to create String are
+1.Using simple approach
+2.Using String constructor(this will store each letter of the string in an array so we can iterate through each index position)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript || Strings</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas commodi cupiditate voluptatibus repudiandae ea, aperiam harum ullam eum sint ad quod dolorum numquam natus. Unde, nostrum dignissimos! Vero tempore, ad illum quaerat rem repudiandae!
+        </p>
+    </div>
+    <script>
+        var string = "this";
+        console.log(string);
+        var name = "Sourav";
+        var surname = "Sharma"
+       //the dollar symbol is used to replace the variable
+        var fullname = `${name} is the name and surname is ${surname}`;
+        console.log(fullname);
+        // this is the method to find the length of a string in JS
+        var len = name.length;
+        console.log(`The length of the name is ${len}`);
+        // we can also construct string using a constructor
+        var y = new String("Messi");
+        console.log(y[0]);
+        console.log(y[1]);
+        console.log(y[2]);
+        console.log(y[3]);
+        console.log(y[4]);
+
+    </script>
+</body>
+</html>

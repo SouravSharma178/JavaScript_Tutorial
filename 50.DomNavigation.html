@@ -1,0 +1,48 @@
+<!-- DOM refers to the document object model -->
+<!-- by using JS we can target elements in the DOM  -->
+
+<!-- main.innerHTML will give us all the HTML items in a string format -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Navigation/Manipulation</title>
+</head>
+<body>
+<div id='main' class="container">
+    <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Services</li>
+    </ul>
+</div>
+<div class="container">
+    Another container
+</div>
+<script>
+    // by using this we can target our DOM using the ids and manipulate/see where it is located
+    let main = document.getElementById('main');
+    console.log(main);
+
+    // by using this we can target our DOM using the ids and manipulate/see where it is located
+    let main1 = document.getElementsByClassName('container');
+    console.log(main1);
+
+    // we can also use CSS selectors to target items in our DOM
+    // it returns the first container with the respective class
+    let sel = document.querySelector('.container');
+    console.log("Selector returns",sel);
+
+    // it returns all container that have this class
+    // sel[i].innerHTML will allow us to change the values
+    let sel1 = document.querySelectorAll('.container');
+    console.log("Selector returns",sel1);
+
+
+</script>
+</body>
+</html>

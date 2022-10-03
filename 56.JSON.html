@@ -1,0 +1,30 @@
+<!-- JSON refers to javascript object notation and it is used to send user defined javascript objects in a string format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON</title>
+  </head>
+  <body>
+    <script>
+      let jsonObj = {
+        name: "sourav",
+        channel: "CWS",
+        friend: "kabir",
+      };
+      console.log(jsonObj);
+      let myStringJSON = JSON.stringify(jsonObj);
+      console.log(myStringJSON);
+      // now in order to change any variales inside our object we will use the replace function
+      myStringJSON = myStringJSON.replace("sourav", "mahinder");
+      console.log(myStringJSON);
+
+      // now if we need to convert our JSON back to an object we will use the parse method
+      newmyStringJSON = JSON.parse(myStringJSON);
+      console.log(newmyStringJSON);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!-- 1.in JS an array is made using a list i.e. it can store variables with different data types
+ -->
+<!-- 2.in JS we can also create an array using round brackets -->
+<!-- 3.JavaScript automatically converts array into arraylist as it can increase the array size at runtime and can also store heterogenous data and further preserves the insertion order -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Objects </title>
+</head>
+<body>
+    <div class="container">simple si html</div>
+    <script>
+        let myVar = 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        // in JS this is how we define objects
+         /*let employee = {
+             name: "Harry",
+             salary: 10,
+             channel: "CodeWithHarry",
+             // if the key variable has spaces between it then we will write it under quotes
+             // to access this we will use the syntax employee['channel 2']
+             // else we will use employee.channel
+             "channel 2": "ProgrammingWithHarry",
+         }
+         console.log(employee);
+         */
+
+        //let names = [1, 2, 4, "Harry", undefined];
+        // declaring arrays using constructors
+        //let names = new Array(41, 2, 4, "Harry", undefined);
+        //console.log(names);
+
+        // this syntax will create an empty array of 23 elements
+
+        let names = new Array(23);
+        console.log(names.length);
+        names = names.sort();
+
+        // to push an element at the end of the array we use the push method
+        names.push("this is pushed");
+        console.log(names);
+    </script>
+</body>
+</html>

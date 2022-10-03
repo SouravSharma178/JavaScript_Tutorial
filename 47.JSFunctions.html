@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions</title>
+</head>
+<body>
+<script>
+
+// the syntax to declare a function is
+
+function greet(name,greetText=" Hi i am JS"){
+   console.log(name+greetText);
+}
+// value returning function
+function sum(a,b,c){
+    let d = (a+b+c);
+    return d;
+    // anything that we print after return statement will not get printed
+    console.log(d);
+}
+
+let name = "Sourav";
+let name1 = "Shyam";
+let name2 = "Ram";
+let name3 = "Vimal";
+
+let greetText = " Hi i am Sourav";
+greet(name,greetText);
+greet(name1,greetText);
+greet(name2,greetText);
+// since we are not giving the second argument here so the default argument above will get printed
+greet(name3);
+
+let returnval = sum(1,2,3);
+console.log(returnval);
+</script>
+</body>
+</html>

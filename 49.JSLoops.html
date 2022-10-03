@@ -1,0 +1,67 @@
+<!-- There are many types of loops in JS -->
+<!--
+1.Simple for loop
+2.forEach loop(This can be used to iterate arrays)
+3.for-of loop(This can be used to iterate arrays)
+4.for-in loop(This is used to iterate over objects)
+5.Do while Loop
+6.While loop
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Loops</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is JS Loops</h1>
+    </div>
+<script>
+    let array = [1,2,3,4,5];
+    // 1.This is the simple for loop
+    for(let i=0;i<array.length;i++){
+        console.log("The item is "+array[i]);
+    }
+    // 2. This is the forEach loop
+    let j = 0
+    array.forEach(function f(j){
+        console.log("The item is "+j+" using for each loop");
+    });
+
+    // 3. This is the for-of loop
+     let k = 0;
+    for (k of array){
+        console.log("The item is "+k+" for of loop");
+    }
+
+
+    let employee = {
+        name:"Sourav",
+        age:24,
+        school:"NMIMS"
+    }
+    // 4. for in loop in JS
+    for(key in employee){
+        console.log(`The ${key} of employee is ${employee[key]}`);
+    }
+
+    // 5.while loop in js
+    let i =0;
+    while(i<4){
+        console.log(`${i} is less than 4`);
+        i++;
+    }
+
+    // 6.do while loop in js
+    let g =34;
+    do{
+        console.log(`${g} is less than 4 and we are inside do while loop`);
+        g++;
+    }while(g<4);
+</script>
+
+</body>
+</html>
